@@ -1,0 +1,59 @@
+.work__section {
+  padding: 8rem 0rem;
+  background: linear-gradient(to top right, #e4eef7, #feffff);
+}
+
+.work__section h2 {
+  text-align: center;
+  color: var(--clr-light-orange);
+}
+
+.work__grid {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  transition: ease-in-out 0.5s;
+}
+
+.work__grid > * {
+  box-shadow: 0rem 0rem 0.5rem var(--clr-light-blue);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: ease-in-out 0.5s;
+}
+
+.works:nth-child(1) {
+  background-color: #f4d04e;
+}
+.works:nth-child(2) {
+  background-color: #ffffff;
+}
+.works:nth-child(3) {
+  background-color: #ffffff;
+}
+.works:nth-child(4) {
+  background-color: #ffffff;
+}
+
+.works:nth-child(7) {
+  background-color: #1abc9c;
+}
+
+.works > * {
+  max-height: 10rem;
+}
+
+.work__grid > *:hover {
+  background-image: url("../images//works/github.png");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.work__grid > *:hover img {
+  display: none;
+}

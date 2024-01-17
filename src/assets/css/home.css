@@ -1,0 +1,95 @@
+.hero {
+  padding: 8rem 0rem;
+  background: linear-gradient(to bottom right, #e4eef7, #feffff);
+}
+
+.hero__text {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.personImage {
+  max-width: 20rem;
+  background-color: #e7eff8;
+  border-radius: 10rem;
+  box-shadow: 0rem 0rem 1rem var(--clr-dark-blue);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+span {
+  color: var(--clr-light-orange);
+}
+
+.position {
+  color: #616263;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.shortInfo {
+  color: #616263;
+}
+
+.container {
+  width: min(95%, 75rem);
+  margin-inline: auto;
+  gap: 1rem;
+}
+
+.heroButtons {
+  gap: 1rem;
+}
+
+.heroButtons a {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: ease-in-out, 0.5s;
+  text-decoration: none;
+}
+
+.hireMeBtn {
+  color: #fff;
+  background: linear-gradient(
+    to bottom right,
+    var(--clr-light-orange),
+    var(--clr-normal-orange)
+  );
+}
+
+.downloadCVBtn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: linear-gradient(to bottom right, #e4eef7, #fffeff);
+  box-shadow: 0rem 0rem 0.5rem rgb(128, 125, 125);
+  color: #000;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.heroButtons a:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (width < 850px) {
+    .home__section{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .personImage{
+      max-width: 15rem;
+    }
+
+    .hero__image{
+      margin-top: 2rem;
+    }
+}
