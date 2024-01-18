@@ -80,16 +80,16 @@ span {
 }
 
 @media screen and (width < 850px) {
-    .home__section{
-      flex-direction: column;
-      align-items: center;
-    }
+  .home__section {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .personImage{
-      max-width: 15rem;
-    }
+  .personImage {
+    max-width: 15rem;
+  }
 
-    .hero__image{
-      margin-top: 2rem;
-    }
+  .hero__image {
+    margin-top: 2rem;
+  }
 }
