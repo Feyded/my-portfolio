@@ -46,7 +46,7 @@ span {
   gap: 1rem;
 }
 
-.heroButtons a {
+.heroButtons > * {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   transition: ease-in-out, 0.5s;
@@ -69,13 +69,15 @@ span {
   background: linear-gradient(to bottom right, #e4eef7, #fffeff);
   box-shadow: 0rem 0rem 0.5rem rgb(128, 125, 125);
   color: #000;
+  border: none;
+  cursor: pointer;
 }
 
 .d-flex {
   display: flex;
 }
 
-.heroButtons a:hover {
+.heroButtons > *:hover {
   transform: scale(1.1);
 }
 

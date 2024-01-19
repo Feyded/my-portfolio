@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/css/navBar.css";
 import stiLogo from "../assets/images/navbar/sti-logo.png";
 
 export function NavBar() {
+  const [isActive, setIsActive] = useState(false);
+
+  const hamburgerMenu = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     <div className="navBar">
       <div className="email">
@@ -14,12 +20,15 @@ export function NavBar() {
           dean.zaballero@gmail.com
         </a>
       </div>
-      <a href="https://www.facebook.com/novaliches.sti.edu">
+      <a
+        className="logo__Container"
+        href="https://www.facebook.com/novaliches.sti.edu"
+      >
         <img className="logo" src={stiLogo} alt="stiLogo" />
       </a>
-      <ul>
+      <ul className={`navList ${isActive ? "active" : "inactive"}`}>
         <li>
-          <a href="/">Home</a>
+          <a href="https://feyded.github.io/my-portfolio/">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -31,6 +40,8 @@ export function NavBar() {
           <a href="/">Certifications</a>
         </li>
       </ul>
+     
+      <input type="checkbox" role="button" aria-label="Display the menu" className="menu" onClick={()=> hamburgerMenu()}></input>
     </div>
   );
 }

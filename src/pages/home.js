@@ -1,8 +1,20 @@
 import React from "react";
 import personImage from "../assets/images/home/person.png";
+import Swal from "sweetalert2";
 import "../assets/css/home.css";
 
 export function Home() {
+  
+  const downloadResume = () => {
+    Swal.fire({
+      title: "Message me!",
+      text: "For inquiries, kindly reach me at dean.zaballero@gmail.com or Fb Dean Zaballero ",
+      icon: "info",
+      iconColor: "#ffb703",
+      confirmButtonText: "OK",
+    });
+  };
+
   return (
     <div className="hero">
       <div className="container home__section d-flex">
@@ -27,10 +39,14 @@ export function Home() {
             >
               Message Me
             </a>
-            <a className="downloadCVBtn" href="/">
+            <button
+              className="downloadCVBtn"
+              href="#"
+              onClick={() => downloadResume()}
+            >
               Download CV
               <i className="small material-icons">cloud_download</i>
-            </a>
+            </button>
           </div>
         </div>
         <div className="hero__image">
