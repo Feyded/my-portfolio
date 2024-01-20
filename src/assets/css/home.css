@@ -17,15 +17,14 @@
   border-radius: 10rem;
   visibility: hidden;
   box-shadow: 0rem 0rem 1rem var(--clr-dark-blue);
-  animation: slideFromRight ease-in 1s;
-  animation-fill-mode: forwards;
+  animation: slideFromRight ease-in 1s forwards;
 }
+
 
 h1 {
   font-size: 4rem;
   visibility: hidden;
-  animation: slideFromLeft ease-in 1s;
-  animation-fill-mode: forwards;
+  animation: slideFromLeft ease-in 1s forwards;
 }
 
 span {
@@ -37,17 +36,15 @@ span {
   font-size: 2rem;
   font-weight: 700;
   visibility: hidden;
-  animation: slideFromLeft ease-in 1s;
+  animation: slideFromLeft ease-in 1s forwards;
   animation-delay: 0.2s;
-  animation-fill-mode: forwards;
 }
 
 .shortInfo {
   color: #616263;
   visibility: hidden;
-  animation: slideFromLeft ease-in 1s;
+  animation: slideFromLeft ease-in 1s forwards;
   animation-delay: 0.4s;
-  animation-fill-mode: forwards;
 }
 
 .container {
@@ -59,9 +56,8 @@ span {
 .heroButtons {
   gap: 1rem;
   visibility: hidden;
-  animation: slideFromLeft ease-in 1s;
+  animation: slideFromLeft ease-in 1s forwards;
   animation-delay: 0.6s;
-  animation-fill-mode: forwards;
 }
 
 .heroButtons > * {
@@ -134,7 +130,7 @@ span {
   }
   to {
     opacity: 1;
-    transform: translateX(0);
     visibility: visible;
+    transform: translateX(0);
   }
 }

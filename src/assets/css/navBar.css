@@ -85,6 +85,7 @@ ul li a:hover {
   }
 
   .navList.active {
+    margin: 0;
     display: block;
     background-color: #ed7d31;
     flex-direction: column;
@@ -93,7 +94,7 @@ ul li a:hover {
     padding: 0rem 1rem;
     right: 0;
     left: 0;
-    top: 5%;
+    top: 0;
     animation: slideLeftIn ease-in-out 0.5s;
   }
 
@@ -192,10 +193,10 @@ ul li a:hover {
 }
 
 @keyframes slideFromTop {
-  from{
+  from {
     transform: translateY(-20%);
   }
-  to{
+  to {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);

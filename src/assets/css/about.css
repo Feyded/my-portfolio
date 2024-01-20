@@ -82,8 +82,12 @@ h3 {
   background: linear-gradient(to top left, #7209f5, #8f0bfd);
 }
 
-@media screen and (width < 800px) {
+@media screen and (width < 500px) {
   .school__grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
