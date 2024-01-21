@@ -37,7 +37,7 @@ export function NavBar() {
           <a href="#works">Works</a>
         </li>
         <li>
-          <a href="/">Certifications</a>
+          <a href="#certificate">Certifications</a>
         </li>
       </ul>
      

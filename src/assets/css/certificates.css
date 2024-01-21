@@ -1,0 +1,74 @@
+.certificate__section {
+  padding: 10rem 0rem;
+}
+.certificate__section h2 {
+  text-align: center;
+}
+
+.certificate__grid {
+  display: grid;
+  width: min(95%, 80%);
+  margin-inline: auto;
+  margin-top: 5rem;
+  gap: 1rem;
+  grid-template-areas:
+    "one six two"
+    "three six two"
+    "four five ...";
+}
+
+.certificate__card {
+  display: flex;
+  border: 1px solid;
+}
+
+.certificate__card > * {
+  filter: grayscale(1);
+  transition: ease-in-out 0.5s;
+  align-self: stretch;
+}
+
+.certificate__card:nth-child(1) {
+  grid-area: one;
+}
+.certificate__card:nth-child(2) {
+  grid-area: two;
+}
+.certificate__card:nth-child(3) {
+  grid-area: three;
+}
+.certificate__card:nth-child(4) {
+  grid-area: four;
+}
+
+.certificate__card:nth-child(5) {
+  grid-area: five;
+}
+.certificate__card:nth-child(6) {
+  grid-area: six;
+}
+
+.certificate__card > *:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 50rem) {
+  .certificate__grid {
+    grid-template-areas:
+      "six two"
+      "one three"
+      "four five";
+  }
+}
+@media screen and (max-width: 40rem) {
+  .certificate__grid {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six";
+  }
+}

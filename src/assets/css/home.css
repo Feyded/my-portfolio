@@ -23,8 +23,7 @@
 
 h1 {
   font-size: 4rem;
-  visibility: hidden;
-  animation: slideFromLeft ease-in 1s forwards;
+  animation: slideFromLeft ease-in 1s;
 }
 
 span {
