@@ -9,26 +9,28 @@ import Certificate6 from "../assets/images/certificates/certificate6.png";
 
 export function Certificate() {
   return (
-    <div id="certificate" className="certificate__section container">
-      <h2>My Certificates</h2>
-      <div className="certificate__grid">
-        <div className="certificate__card">
-          <img src={Certificate1} alt="" />
-        </div>
-        <div className="certificate__card">
-          <img src={Certificate2} alt="" />
-        </div>
-        <div className="certificate__card">
-          <img src={Certificate3} alt="" />
-        </div>
-        <div className="certificate__card">
-          <img src={Certificate4} alt="" />
-        </div>
-        <div className="certificate__card">
-          <img src={Certificate5} alt="" />
-        </div>
-        <div className="certificate__card">
-          <img src={Certificate6} alt="" />
+    <div id="certificate" className="certificate__section ">
+      <div className="container">
+        <h2>My Certificates</h2>
+        <div className="certificate__grid">
+          <div className="certificate__card">
+            <img src={Certificate1} alt="" />
+          </div>
+          <div className="certificate__card">
+            <img src={Certificate2} alt="" />
+          </div>
+          <div className="certificate__card">
+            <img src={Certificate3} alt="" />
+          </div>
+          <div className="certificate__card">
+            <img src={Certificate4} alt="" />
+          </div>
+          <div className="certificate__card">
+            <img src={Certificate5} alt="" />
+          </div>
+          <div className="certificate__card">
+            <img src={Certificate6} alt="" />
+          </div>
         </div>
       </div>
     </div>

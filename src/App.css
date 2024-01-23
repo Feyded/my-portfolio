@@ -36,3 +36,20 @@ p {
   margin: 0;
 }
 
+.dark .navBar,
+.dark .hero,
+.dark .about__section,
+.dark .certificate__section,
+.dark .work__section {
+  background: #292929;
+  color: #fff;
+}
+
+.dark .navBar a,
+.dark .hero p {
+  color: #fff;
+}
+
+.dark .menu {
+  --c: #fff;
+}

@@ -1,6 +1,7 @@
 .hero {
   padding: 8rem 0rem;
   background: linear-gradient(to bottom right, #e4eef7, #feffff);
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
 }
 
 .hero__text {

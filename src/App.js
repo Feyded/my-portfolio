@@ -6,7 +6,7 @@ import { Home } from "./pages/home";
 import { Works } from "./pages/works";
 function App() {
   return (
-    <div className="App">
+    <div className="App light">
       <NavBar />
       <Home />
       <About />

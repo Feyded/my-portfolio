@@ -1,6 +1,7 @@
 .work__section {
-  padding: 8rem 0rem;
+  padding: 5rem 0rem;
   background: linear-gradient(to top right, #e4eef7, #feffff);
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
 }
 
 .work__section h2 {

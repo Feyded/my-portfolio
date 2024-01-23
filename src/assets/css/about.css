@@ -2,6 +2,7 @@
   display: grid;
   gap: 4rem;
   padding: 5rem 0rem;
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
 }
 
 h2 {
@@ -67,7 +68,7 @@ h3 {
 }
 
 .reactjs-color {
-  background-color: #fff;
+  background-color: #e9e0e0;
 }
 
 .nodejs-color {
@@ -83,7 +84,7 @@ h3 {
 }
 
 .github-color{
-  background-color: #fff;
+  background-color: #cac6c6;
 }
 
 @media screen and (width < 500px) {

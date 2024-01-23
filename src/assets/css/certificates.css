@@ -1,5 +1,6 @@
 .certificate__section {
-  padding: 10rem 0rem;
+  padding: 5rem 0rem;
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
 }
 .certificate__section h2 {
   text-align: center;
