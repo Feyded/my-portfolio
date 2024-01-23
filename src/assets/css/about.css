@@ -51,6 +51,10 @@ h3 {
   justify-content: center;
 }
 
+.skills__grid .card img{
+  max-height: 7rem;
+}
+
 .skills__grid > *:hover {
   filter: grayscale(1);
 }
@@ -68,7 +72,7 @@ h3 {
 }
 
 .reactjs-color {
-  background-color: #e9e0e0;
+  background-color: #00d7fe;
 }
 
 .nodejs-color {

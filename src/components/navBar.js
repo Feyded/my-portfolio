@@ -53,7 +53,7 @@ export function NavBar() {
           <label
             className="toggle"
             onClick={() => darkModeToggle()}
-            for="toggle"
+            htmlFor="toggle"
           >
             <i className="bx bxs-sun"></i>
             <i className="bx bx-moon"></i>
