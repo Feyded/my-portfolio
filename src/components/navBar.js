@@ -40,7 +40,6 @@ export function NavBar() {
           <a href="#certificate">Certifications</a>
         </li>
       </ul>
-     
       <input type="checkbox" role="button" aria-label="Display the menu" className="menu" onClick={()=> hamburgerMenu()}></input>
     </div>
   );

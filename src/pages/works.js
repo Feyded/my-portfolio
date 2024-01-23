@@ -7,6 +7,7 @@ import work5 from "../assets/images/works/work5.png";
 import work6 from "../assets/images/works/work6.png";
 import work7 from "../assets/images/works/work7.png";
 import work8 from "../assets/images/works/work8.png";
+import work10 from "../assets/images/works/work10.png";
 import "../assets/css/works.css";
 
 export function Works() {
@@ -38,6 +39,9 @@ export function Works() {
           </a>       
           <a href="https://github.com/Feyded" className="works">
             <img src={work8} alt="" />
+          </a>
+          <a href="https://elyon-web.com/" className="works">
+            <img src={work10} alt="" />
           </a>
         </div>
       </div>

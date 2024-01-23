@@ -7,6 +7,7 @@ import nodeJSImage from "../assets/images/about/nodejs.png";
 import phpImage from "../assets/images/about/php.png";
 import reactJSImage from "../assets/images/about/reactjs.png";
 import boostrapImage from "../assets/images/about/bootstrap.png";
+import githubImage from "../assets/images/about/github.png";
 
 export function About() {
   return (
@@ -78,6 +79,9 @@ export function About() {
           </div>
           <div className="card bootstrap-color">
             <img src={boostrapImage} alt="bootstrap_Image" />
+          </div>
+          <div className="card github-color">
+            <img src={githubImage} alt="github_image" />
           </div>
         </div>
       </div>

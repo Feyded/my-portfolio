@@ -18,11 +18,16 @@
 
 .work__grid > * {
   box-shadow: 0rem 0rem 0.5rem var(--clr-light-blue);
+  min-height: 10rem;
   display: flex;
   justify-content: center;
   padding: 1rem;
   border-radius: 1rem;
   transition: ease-in-out 0.5s;
+}
+
+.works > * {
+  max-height: 10rem;
 }
 
 .works:nth-child(1) {
@@ -40,10 +45,6 @@
 
 .works:nth-child(7) {
   background-color: #1abc9c;
-}
-
-.works > * {
-  max-height: 10rem;
 }
 
 .work__grid > *:hover {
