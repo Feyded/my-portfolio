@@ -4,7 +4,7 @@ import stiLogo from "../assets/images/navbar/sti-logo.png";
 
 export function NavBar() {
   const [isActive, setIsActive] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const hamburgerMenu = () => {
     setIsActive(!isActive);
