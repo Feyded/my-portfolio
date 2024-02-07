@@ -91,6 +91,10 @@ h3 {
   background-color: #cac6c6;
 }
 
+.vuejs-color{
+  background-color: #56ffb5;
+}
+
 @media screen and (width < 500px) {
   .school__grid {
     grid-template-columns: 1fr;

@@ -8,6 +8,7 @@ import phpImage from "../assets/images/about/php.png";
 import reactJSImage from "../assets/images/about/reactjs.png";
 import boostrapImage from "../assets/images/about/bootstrap.png";
 import githubImage from "../assets/images/about/github.png";
+import vuejs from "../assets/images/about/vuejs.png";
 
 export function About() {
   return (
@@ -82,6 +83,9 @@ export function About() {
           </div>
           <div className="card github-color">
             <img src={githubImage} alt="github_image" />
+          </div>
+          <div className="card vuejs-color">
+            <img src={vuejs} alt="vuejs" />
           </div>
         </div>
       </div>
