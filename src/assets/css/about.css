@@ -79,8 +79,8 @@ h3 {
   background-color: #8bc500;
 }
 
-.php-color {
-  background-color: #4f5b93;
+.typescript-color {
+  background-color: #007acc;
 }
 
 .bootstrap-color {
@@ -93,6 +93,9 @@ h3 {
 
 .vuejs-color{
   background-color: #56ffb5;
+}
+.nextjs-color{
+  background-color: #fff;
 }
 
 @media screen and (width < 500px) {

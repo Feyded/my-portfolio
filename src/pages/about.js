@@ -4,11 +4,12 @@ import cssImage from "../assets/images/about/css.png";
 import htmlImage from "../assets/images/about/html.png";
 import javascriptImage from "../assets/images/about/javascript.png";
 import nodeJSImage from "../assets/images/about/nodejs.png";
-import phpImage from "../assets/images/about/php.png";
+import typescript from "../assets/images/about/typescript.png";
 import reactJSImage from "../assets/images/about/reactjs.png";
-import boostrapImage from "../assets/images/about/bootstrap.png";
+import tailwind from "../assets/images/about/tailwind.png";
 import githubImage from "../assets/images/about/github.png";
 import vuejs from "../assets/images/about/vuejs.png";
+import nextjs from "../assets/images/about/nextjs.png";
 
 export function About() {
   return (
@@ -75,17 +76,20 @@ export function About() {
           <div className="card nodejs-color">
             <img src={nodeJSImage} alt="nodejs_Image" />
           </div>
-          <div className="card php-color">
-            <img src={phpImage} alt="php_Image" />
+          <div className="card typescript-color">
+            <img src={typescript} alt="typescript_Image" />
           </div>
-          <div className="card bootstrap-color">
-            <img src={boostrapImage} alt="bootstrap_Image" />
+          <div className="card tailwind-color">
+            <img src={tailwind} alt="tailwind_Image" />
           </div>
           <div className="card github-color">
             <img src={githubImage} alt="github_image" />
           </div>
           <div className="card vuejs-color">
             <img src={vuejs} alt="vuejs" />
+          </div>
+          <div className="card nextjs-color">
+            <img src={nextjs} alt="nextjs" />
           </div>
         </div>
       </div>
