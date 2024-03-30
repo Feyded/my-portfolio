@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.24b20f14.css",
-    "main.js": "/my-portfolio/static/js/main.3084232b.js",
+    "main.css": "/my-portfolio/static/css/main.c9f28638.css",
+    "main.js": "/my-portfolio/static/js/main.8cd9de3a.js",
     "static/media/certificate4.png": "/my-portfolio/static/media/certificate4.2abfa169d79011ef80d3.png",
     "static/media/certificate5.png": "/my-portfolio/static/media/certificate5.55b567d6220b8701eac7.png",
     "static/media/work5.png": "/my-portfolio/static/media/work5.5fb40f7647ad9ac13896.png",
@@ -19,18 +19,18 @@
     "static/media/work1.png": "/my-portfolio/static/media/work1.31e004814136764c89dd.png",
     "static/media/certificate1.png": "/my-portfolio/static/media/certificate1.5a4e064839fbe413f82b.png",
     "static/media/vuejs.png": "/my-portfolio/static/media/vuejs.4e31dad8dffdd48ca32d.png",
-    "static/media/bootstrap.png": "/my-portfolio/static/media/bootstrap.b3322d1c9c890b03cebe.png",
     "static/media/work4.png": "/my-portfolio/static/media/work4.f847ea5f0f3c8c25fa1d.png",
     "static/media/github.png": "/my-portfolio/static/media/github.a02f399e527ec9c90d8f.png",
     "static/media/javascript.png": "/my-portfolio/static/media/javascript.7f8751632b42a9932c15.png",
     "static/media/work7.png": "/my-portfolio/static/media/work7.bd8106efc5824e1ba0c7.png",
+    "static/media/nextjs.png": "/my-portfolio/static/media/nextjs.914b763ebe9f826ccd52.png",
     "static/media/nodejs.png": "/my-portfolio/static/media/nodejs.a944ef19fe84ba7371f2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.24b20f14.css.map": "/my-portfolio/static/css/main.24b20f14.css.map",
-    "main.3084232b.js.map": "/my-portfolio/static/js/main.3084232b.js.map"
+    "main.c9f28638.css.map": "/my-portfolio/static/css/main.c9f28638.css.map",
+    "main.8cd9de3a.js.map": "/my-portfolio/static/js/main.8cd9de3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.24b20f14.css",
-    "static/js/main.3084232b.js"
+    "static/css/main.c9f28638.css",
+    "static/js/main.8cd9de3a.js"
   ]
 }
