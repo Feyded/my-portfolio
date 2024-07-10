@@ -1,5 +1,5 @@
 import React from "react";
-import personImage from "../assets/images/home/person.png";
+import personImage from "../assets/images/home/person.jpg";
 import Swal from "sweetalert2";
 import "../assets/css/home.css";
 
