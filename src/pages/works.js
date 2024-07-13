@@ -7,7 +7,11 @@ import work5 from "../assets/images/works/work5.png";
 import work6 from "../assets/images/works/work6.png";
 import work7 from "../assets/images/works/work7.png";
 import work8 from "../assets/images/works/work8.png";
+import work9 from "../assets/images/works/work9.png";
 import work10 from "../assets/images/works/work10.png";
+import work11 from "../assets/images/works/work11.png";
+import work12 from "../assets/images/works/work12.png";
+import work13 from "../assets/images/works/work13.png";
 import "../assets/css/works.css";
 
 export function Works() {
@@ -16,7 +20,7 @@ export function Works() {
       <div className="container work__container">
         <h2>My Works</h2>
         <div className="work__grid">
-          <a href="https://github.com/Feyded/Front-End-Challenges-Accomplished/tree/main/blog-preview-card-main" className="works">
+          {/* <a href="https://github.com/Feyded/Front-End-Challenges-Accomplished/tree/main/blog-preview-card-main" className="works">
             <img src={work1} alt="" />
           </a>
           <a href="https://github.com/Feyded/Front-End-Challenges-Accomplished/tree/main/four-card-feature-section-master" className="works">
@@ -42,6 +46,15 @@ export function Works() {
           </a>
           <a href="https://elyon-web.com/" className="works">
             <img src={work10} alt="" />
+          </a> */}
+          <a href="http://101production.infinityfreeapp.com" className="works">
+            <img src={work12} alt="" />
+          </a>
+          <a href="https://github.com/Feyded/ecommerce-mern" className="works">
+            <img src={work11} alt="" />
+          </a>
+          <a href="https://github.com/Feyded/recipe-app-MERN" className="works">
+            <img src={work13} alt="" />
           </a>
         </div>
       </div>
