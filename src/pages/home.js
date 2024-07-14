@@ -4,7 +4,6 @@ import Swal from "sweetalert2";
 import "../assets/css/home.css";
 
 export function Home() {
-  
   const downloadResume = () => {
     Swal.fire({
       title: "Message me!",
@@ -27,9 +26,10 @@ export function Home() {
           </div>
           <div>
             <p className="shortInfo">
-              I'm a student from STI College of Novaliches and will graduate
-              this year 2024. I'm excited to develop my critical and analytical
-              thinking by solving problems and applying my skills in real world.
+              I am a student from STI College of Novaliches, and I graduated
+              this year, 2024. I am excited to develop my critical and
+              analytical thinking by solving problems and applying my skills in
+              the real world.
             </p>
           </div>
           <div className="heroButtons d-flex">
