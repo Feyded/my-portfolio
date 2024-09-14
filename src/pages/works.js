@@ -1,61 +1,88 @@
 import React from "react";
-import work1 from "../assets/images/works/work1.png";
-import work2 from "../assets/images/works/work2.png";
-import work3 from "../assets/images/works/work3.png";
-import work4 from "../assets/images/works/work4.png";
-import work5 from "../assets/images/works/work5.png";
-import work6 from "../assets/images/works/work6.png";
-import work7 from "../assets/images/works/work7.png";
-import work8 from "../assets/images/works/work8.png";
-import work9 from "../assets/images/works/work9.png";
-import work10 from "../assets/images/works/work10.png";
-import work11 from "../assets/images/works/work11.png";
+import newWork1 from "../assets/images/works/newWork1.png";
+import newWork2 from "../assets/images/works/newWork2.png";
 import work12 from "../assets/images/works/work12.png";
-import work13 from "../assets/images/works/work13.png";
 import "../assets/css/works.css";
+import { ArrowRight } from "lucide-react";
+
+const works = [
+  {
+    imageUrl: newWork1,
+    techstack: ["React", "Nextjs", "Tailwindcss", "Redux", "Redux Toolkit"],
+    buttonLabel: "View Demo",
+    buttonUrl: "https://myprojects-three.vercel.app/dashboard-roi",
+  },
+  {
+    imageUrl: newWork2,
+    techstack: [
+      "React",
+      "Nextjs",
+      "Tailwindcss",
+      "Redux",
+      "RTK Query",
+      "Prisma",
+      "PostgreSQL",
+      "Express",
+    ],
+    buttonLabel: "View Repository",
+    buttonUrl: "https://github.com/Feyded/inventory-management",
+  },
+  {
+    imageUrl: work12,
+    techstack: [
+      "React",
+      "Nextjs",
+      "Tailwindcss",
+      "Framer Motion",
+      "Redux",
+    ],
+    buttonLabel: "View Demo",
+    buttonUrl: "http://101production.infinityfreeapp.com",
+  },
+];
 
 export function Works() {
   return (
     <div id="works" className="work__section">
-      <div className="container work__container">
-        <h2>My Works</h2>
-        <div className="work__grid">
-          {/* <a href="https://github.com/Feyded/Front-End-Challenges-Accomplished/tree/main/blog-preview-card-main" className="works">
-            <img src={work1} alt="" />
-          </a>
-          <a href="https://github.com/Feyded/Front-End-Challenges-Accomplished/tree/main/four-card-feature-section-master" className="works">
-            <img src={work2} alt="" />
-          </a>
-          <a href="https://github.com/Feyded/Front-End-Challenges-Accomplished/tree/main/results-summary-component-main" className="works">
-            <img src={work3} alt="" />
-          </a>
-          <a href="https://github.com/Feyded" className="works">
-            <img src={work4} alt="" />
-          </a>
-          <a href="https://github.com/Feyded/STI-simple-form" className="works">
-            <img src={work5} alt="" />
-          </a>
-          <a href="https://github.com/Feyded/Practice---HTML-CSS-and-Javascript/tree/main/Interior%20design%20website" className="works">
-            <img src={work6} alt="" />
-          </a>
-          <a href="https://github.com/Feyded/Practice---HTML-CSS-and-Javascript/tree/main/Login%20Form%20with%20UI" className="works">
-            <img src={work7} alt="" />
-          </a>       
-          <a href="https://github.com/Feyded" className="works">
-            <img src={work8} alt="" />
-          </a>
-          <a href="https://elyon-web.com/" className="works">
-            <img src={work10} alt="" />
-          </a> */}
-          <a href="http://101production.infinityfreeapp.com" className="works">
-            <img src={work12} alt="" />
-          </a>
-          <a href="https://github.com/Feyded/ecommerce-mern" className="works">
-            <img src={work11} alt="" />
-          </a>
-          <a href="https://github.com/Feyded/recipe-app-MERN" className="works">
-            <img src={work13} alt="" />
-          </a>
+      <div className="max-w-2xl xl:max-w-4xl mx-auto">
+        <h2 className="font-bold">My Works</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5">
+          {/* CARDS */}
+          {works.map((work) => (
+            <div
+              key={work.imageUrl}
+              className="hover:shadow-2xl hover:shadow-orange-500 max-w-sm h-full flex flex-col mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <img
+                className="rounded-t-lg w-full h-40"
+                src={work.imageUrl}
+                alt=""
+              />
+              <div className="flex flex-col p-5 flex-grow">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Tech Stack:
+                </h5>
+                <div className="grid sm:grid-cols-2">
+                  {work.techstack.map((tech) => (
+                    <p key={tech} className="text-gray-700 dark:text-gray-400">
+                      - {tech}
+                    </p>
+                  ))}
+                </div>
+                <br />
+                  <a
+                    href={work.buttonUrl}
+                    className="group inline-flex justify-center mt-auto items-center px-3 gap-1 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    {work.buttonLabel}
+                    <ArrowRight
+                      className="animate-bounceX group-hover:animate-none"
+                      size={20}
+                    />
+                  </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -15,13 +15,13 @@ export function About() {
   return (
     <div className="about__section" id="about">
       <div className="container">
-        <h2>About Me</h2>
+        <h2 className="font-bold">About Me</h2>
         <div>
           <div className="school__grid">
             <div className="school">
               <i className="material-icons">school</i>
               <div>
-                <h3>St. Dominic Academy of Caloocan City</h3>
+                <h3 className="font-semibold">St. Dominic Academy of Caloocan City</h3>
                 <p>
                   Elementary <span className="school__date">2006-2013</span>
                 </p>
@@ -30,7 +30,7 @@ export function About() {
             <div className="school">
               <i className="material-icons">school</i>
               <div>
-                <h3>St. Joseph College of Novaliches</h3>
+                <h3 className="font-semibold">St. Joseph College of Novaliches</h3>
                 <p>
                   Highschool <span className="school__date">2013-2017</span>
                 </p>
@@ -39,7 +39,7 @@ export function About() {
             <div className="school">
               <i className="material-icons">school</i>
               <div>
-                <h3>AMA University</h3>
+                <h3 className="font-semibold">AMA University</h3>
                 <p>
                   Senior Highschool (STEM)
                   <span className="school__date"> 2017-2019</span>
@@ -49,7 +49,7 @@ export function About() {
             <div className="school">
               <i className="material-icons">school</i>
               <div>
-                <h3>STI College of Novaliches</h3>
+                <h3 className="font-semibold">STI College of Novaliches</h3>
                 <p>
                   College (BSIT) <span className="school__date">2019-2024</span>
                 </p>
@@ -59,7 +59,7 @@ export function About() {
         </div>
       </div>
       <div className="container">
-        <h2>My Skills</h2>
+        <h2 className="font-bold">My Skills</h2>
         <div className="skills__grid">
           <div className="card html-color">
             <img src={htmlImage} alt="html_Image" />

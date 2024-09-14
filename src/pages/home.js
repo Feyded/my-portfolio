@@ -1,7 +1,10 @@
 import React from "react";
 import personImage from "../assets/images/home/person.png";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
 import "../assets/css/home.css";
+import { useEffect, useState } from "react";
+
 
 export function Home() {
   const downloadResume = () => {
@@ -19,8 +22,9 @@ export function Home() {
       <div className="container home__section d-flex">
         <div className="hero__text">
           <div>
-            <h1>
-              Hi, I'm <span>Dean Zaballero</span>
+            <h1 className="font-bold space-y-1">
+              Hi, I'm <FlipLink href="#">Dean </FlipLink>
+              <FlipLink href="#">Zaballero </FlipLink>
             </h1>
             <p className="position">Fullstack Developer</p>
           </div>
@@ -50,9 +54,93 @@ export function Home() {
           </div>
         </div>
         <div className="hero__image">
-          <img className="personImage" src={personImage} alt="" />
+          <motion.div
+            initial={{ transform: "translateZ(8px) translateY(02px)" }}
+            animate={{ transform: "translateZ(32px) translateY(-8px)" }}
+            transition={{ duration: 1, repeat: Infinity, repeatType: "mirror" }}
+            style={{ position: "relative" }}
+          >
+            <img className="personImage" src={personImage} alt="" />
+          </motion.div>
         </div>
       </div>
     </div>
   );
 }
+
+
+const DURATION = 0.5; // Set your animation duration
+const STAGGER = 0.1;  // Stagger time between letters
+const INTERVAL = 2000; // Interval time in milliseconds
+
+const FlipLink = ({ children, href }) => {
+  const [triggerAnimation, setTriggerAnimation] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTriggerAnimation((prev) => !prev);
+    }, INTERVAL);
+
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, []);
+
+  return (
+    <motion.a
+      href={href}
+      className="relative block overflow-hidden whitespace-nowrap text-7xl font-black uppercase sm:text-7xl md:text-8xl lg:text-7xl"
+      style={{
+        lineHeight: 0.75,
+      }}
+    >
+      <div>
+        {children.split("").map((l, i) => (
+          <motion.span
+            animate={triggerAnimation ? "hovered" : "initial"}
+            variants={{
+              initial: {
+                y: 0,
+              },
+              hovered: {
+                y: "-100%",
+              },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+            className="inline-block"
+            key={i}
+          >
+            {l}
+          </motion.span>
+        ))}
+      </div>
+      <div className="absolute inset-0">
+        {children.split("").map((l, i) => (
+          <motion.span
+            animate={triggerAnimation ? "hovered" : "initial"}
+            variants={{
+              initial: {
+                y: "100%",
+              },
+              hovered: {
+                y: 0,
+              },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+            className="inline-block"
+            key={i}
+          >
+            {l}
+          </motion.span>
+        ))}
+      </div>
+    </motion.a>
+  );
+};
+

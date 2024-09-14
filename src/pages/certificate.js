@@ -11,7 +11,7 @@ export function Certificate() {
   return (
     <div id="certificate" className="certificate__section ">
       <div className="container">
-        <h2>My Certificates</h2>
+        <h2 className="font-bold">My Certificates</h2>
         <div className="certificate__grid">
           <div className="certificate__card">
             <img src={Certificate1} alt="" />

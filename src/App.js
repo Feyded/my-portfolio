@@ -7,7 +7,7 @@ import { Works } from "./pages/works";
 function App() {
   return (
     <div className="App">
-      <NavBar />
+       <NavBar />
       <Home />
       <About />
       <Works />
@@ -17,4 +17,3 @@ function App() {
 }
 
 export default App;
-
