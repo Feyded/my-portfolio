@@ -51,7 +51,7 @@ export function Works() {
           {works.map((work) => (
             <div
               key={work.imageUrl}
-              className="hover:shadow-2xl hover:shadow-orange-500 max-w-sm h-full flex flex-col mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              className="hover:shadow-2xl hover:shadow-orange-500 max-w-sm h-full flex flex-col mx-auto bg-gray-50 border border-gray-200 rounded-lg shadow "
             >
               <img
                 className="rounded-t-lg w-full h-40"
@@ -59,12 +59,12 @@ export function Works() {
                 alt=""
               />
               <div className="flex flex-col p-5 flex-grow">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                   Tech Stack:
                 </h5>
                 <div className="grid sm:grid-cols-2">
                   {work.techstack.map((tech) => (
-                    <p key={tech} className="text-gray-700 dark:text-gray-400">
+                    <p key={tech} className="text-gray-700">
                       - {tech}
                     </p>
                   ))}
@@ -72,7 +72,7 @@ export function Works() {
                 <br />
                   <a
                     href={work.buttonUrl}
-                    className="group inline-flex justify-center mt-auto items-center px-3 gap-1 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="group inline-flex justify-center mt-auto items-center px-3 gap-1 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
                   >
                     {work.buttonLabel}
                     <ArrowRight
