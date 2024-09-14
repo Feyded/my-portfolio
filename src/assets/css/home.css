@@ -95,10 +95,14 @@ span {
   transform: scale(1.1);
 }
 
-@media screen and (width < 850px) {
+@media screen and (width < 950px) {
   .home__section {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .hero__text {
+    padding-inline: 2px;
   }
 
   .personImage {
