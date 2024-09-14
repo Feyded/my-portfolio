@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import "../assets/css/home.css";
 import { useEffect, useState } from "react";
 
-
 export function Home() {
   const downloadResume = () => {
     Swal.fire({
@@ -30,10 +29,10 @@ export function Home() {
           </div>
           <div>
             <p className="shortInfo">
-              I am a student from STI College of Novaliches, and I graduated
-              this year, 2024. I am excited to develop my critical and
-              analytical thinking by solving problems and applying my skills in
-              the real world.
+              I have developed strong critical and analytical thinking skills
+              through hands-on projects and solving real-world problems. I’m
+              eager to further enhance my technical expertise and contribute
+              meaningfully in any environment.
             </p>
           </div>
           <div className="heroButtons d-flex">
@@ -68,9 +67,8 @@ export function Home() {
   );
 }
 
-
 const DURATION = 0.5; // Set your animation duration
-const STAGGER = 0.1;  // Stagger time between letters
+const STAGGER = 0.1; // Stagger time between letters
 const INTERVAL = 2000; // Interval time in milliseconds
 
 const FlipLink = ({ children, href }) => {
@@ -143,4 +141,3 @@ const FlipLink = ({ children, href }) => {
     </motion.a>
   );
 };
-
