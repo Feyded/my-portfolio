@@ -9,7 +9,7 @@ import Certificate6 from "../assets/images/certificates/certificate6.png";
 
 export function Certificate() {
   return (
-    <div id="certificate" className="certificate__section ">
+    <div className="pt-12 pb-8 text-center bg-zinc-900">
       <div className="container">
         <h2 className="font-bold">My Certificates</h2>
         <div className="certificate__grid">
