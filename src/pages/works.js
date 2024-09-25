@@ -52,7 +52,7 @@ export function Works() {
           {works.map((work) => (
             <div
               key={work.imageUrl}
-              className="hover:shadow-2xl hover:shadow-orange-500 max-w-sm h-full flex flex-col mx-auto bg-gray-50 border border-gray-200 rounded-lg shadow "
+              className="hover:shadow-2xl w-full hover:shadow-orange-500 max-w-sm h-full flex flex-col mx-auto bg-gray-50 border border-gray-200 rounded-lg shadow "
             >
               <img
                 className="rounded-t-lg w-full h-40"

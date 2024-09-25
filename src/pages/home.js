@@ -21,11 +21,11 @@ export function Home() {
       <div className="container home__section d-flex">
         <div className="hero__text">
           <div>
-            <h1 className="font-bold space-y-1">
+            <h1 className="font-bold space-y-1 text-4xl sm:text-6xl md:text-7xl">
               Hi, I'm <FlipLink href="#">Dean </FlipLink>
               <FlipLink href="#">Zaballero </FlipLink>
             </h1>
-            <p className="position">Fullstack Developer</p>
+            <p className="position text-2xl sm:text-3xl font-bold">Fullstack Developer</p>
           </div>
           <div>
             <p className="shortInfo">
@@ -85,7 +85,7 @@ const FlipLink = ({ children, href }) => {
   return (
     <motion.a
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-7xl font-black uppercase sm:text-7xl md:text-8xl lg:text-7xl"
+      className="relative block overflow-hidden whitespace-nowrap font-black uppercase "
       style={{
         lineHeight: 0.75,
       }}
