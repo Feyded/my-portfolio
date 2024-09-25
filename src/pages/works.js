@@ -2,6 +2,7 @@ import React from "react";
 import newWork1 from "../assets/images/works/newWork1.png";
 import newWork2 from "../assets/images/works/newWork2.png";
 import newWork3 from "../assets/images/works/newWork3.png";
+import newWork4 from "../assets/images/works/newWork4.png";
 import "../assets/css/works.css";
 import { ArrowRight } from "lucide-react";
 
@@ -32,6 +33,12 @@ const works = [
     techstack: ["React", "Nextjs", "Tailwindcss", "Framer Motion"],
     buttonLabel: "View Demo",
     buttonUrl: "https://myprojects-three.vercel.app/mock-design",
+  },
+  {
+    imageUrl: newWork4,
+    techstack: ["Angular", "Typescript", "Tailwindcss"],
+    buttonLabel: "View Demo",
+    buttonUrl: "https://angular-project-gamma-nine.vercel.app/home",
   },
 ];
 
