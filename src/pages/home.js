@@ -21,7 +21,7 @@ export function Home() {
       <div className="container home__section d-flex">
         <div className="hero__text">
           <div>
-            <h1 className="font-bold space-y-1 text-4xl sm:text-6xl md:text-7xl">
+            <h1 className="font-bold space-y-1 text-6xl md:text-7xl">
               Hi, I'm <FlipLink href="#">Dean </FlipLink>
               <FlipLink href="#">Zaballero </FlipLink>
             </h1>

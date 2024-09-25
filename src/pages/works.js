@@ -44,7 +44,7 @@ const works = [
 
 export function Works() {
   return (
-    <div id="works" className="work__section">
+    <div id="works" className="work__section mx-4">
       <div className="max-w-2xl xl:max-w-4xl mx-auto">
         <h2 className="font-bold">My Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5">
