@@ -32,7 +32,7 @@ const works = [
     imageUrl: newWork3,
     techstack: ["React", "Nextjs", "Tailwindcss", "Framer Motion"],
     buttonLabel: "View Demo",
-    buttonUrl: "https://myprojects-three.vercel.app/mock-design",
+    buttonUrl: "https://mock-design.vercel.app/",
   },
   {
     imageUrl: newWork4,
