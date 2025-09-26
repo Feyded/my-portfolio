@@ -36,9 +36,16 @@ const works = [
   },
   {
     imageUrl: newWork4,
-    techstack: ["Angular", "Typescript", "Tailwindcss"],
+    techstack: [
+      "React",
+      "Vite",
+      "Tanstack Query",
+      "Redux",
+      "ShadCN",
+      "Framer Motion",
+    ],
     buttonLabel: "View Demo",
-    buttonUrl: "https://angular-project-gamma-nine.vercel.app/home",
+    buttonUrl: "https://react-vite-ecommerce-beryl.vercel.app",
   },
 ];
 
