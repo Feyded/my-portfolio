@@ -49,19 +49,6 @@ const works = [
     buttonUrl: "https://react-vite-ecommerce-beryl.vercel.app",
   },
   {
-    imageUrl: newWork4,
-    techstack: [
-      "React",
-      "Vite",
-      "Tanstack Query",
-      "Redux",
-      "ShadCN",
-      "Framer Motion",
-    ],
-    buttonLabel: "View Demo",
-    buttonUrl: "https://react-vite-ecommerce-beryl.vercel.app",
-  },
-  {
     imageUrl: newWork5,
     techstack: [
       "React",
