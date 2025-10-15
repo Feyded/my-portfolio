@@ -3,6 +3,7 @@ import newWork1 from "../assets/images/works/newWork1.png";
 import newWork2 from "../assets/images/works/newWork2.png";
 import newWork3 from "../assets/images/works/newWork3.png";
 import newWork4 from "../assets/images/works/newWork4.png";
+import newWork5 from "../assets/images/works/newWork5.png";
 import "../assets/css/works.css";
 import { ArrowRight } from "lucide-react";
 
@@ -46,6 +47,29 @@ const works = [
     ],
     buttonLabel: "View Demo",
     buttonUrl: "https://react-vite-ecommerce-beryl.vercel.app",
+  },
+  {
+    imageUrl: newWork4,
+    techstack: [
+      "React",
+      "Vite",
+      "Tanstack Query",
+      "Redux",
+      "ShadCN",
+      "Framer Motion",
+    ],
+    buttonLabel: "View Demo",
+    buttonUrl: "https://react-vite-ecommerce-beryl.vercel.app",
+  },
+  {
+    imageUrl: newWork5,
+    techstack: [
+      "React",
+      "Vite",
+      "Tailwindcss",
+    ],
+    buttonLabel: "View Demo",
+    buttonUrl: "https://bookmark-manager-figma.vercel.app",
   },
 ];
 
