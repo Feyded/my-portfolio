@@ -484,38 +484,38 @@ const WORK = [
 ];
 
 /* set an `image` URL on any project to replace its screenshot placeholder */
-const PROJECTS = [
-  {
-    name: "Medical Appointment for Trinity Asia",
-    period: "2025",
-    image: "",
-    description:
-      "Personal finance dashboard that links bank accounts, visualizes spending trends, and forecasts monthly cash flow. Built and shipped solo — now used by over 1,200 people.",
-    stack: ["React", "Node.js", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "#",
-  },
-  {
-    name: "Loop",
-    period: "2024",
-    image: "",
-    description:
-      "Real-time collaborative whiteboard with multiplayer cursors and conflict-free sync. Led the frontend and built the canvas synchronization engine.",
-    stack: ["Next.js", "Socket.io", "Redis"],
-    github: "https://github.com",
-    demo: "#",
-  },
-  {
-    name: "ShelfSense",
-    period: "2023",
-    image: "",
-    description:
-      "Inventory forecasting tool that predicts restock timing for small retailers from historical sales data. Owned the backend and data pipeline end to end.",
-    stack: ["Python", "Django", "AWS"],
-    github: "https://github.com",
-    demo: "#",
-  },
-];
+// const PROJECTS = [
+//   {
+//     name: "Medical Appointment for Trinity Asia",
+//     period: "2025",
+//     image: "",
+//     description:
+//       "Personal finance dashboard that links bank accounts, visualizes spending trends, and forecasts monthly cash flow. Built and shipped solo — now used by over 1,200 people.",
+//     stack: ["React", "Node.js", "PostgreSQL"],
+//     github: "https://github.com",
+//     demo: "#",
+//   },
+//   {
+//     name: "Loop",
+//     period: "2024",
+//     image: "",
+//     description:
+//       "Real-time collaborative whiteboard with multiplayer cursors and conflict-free sync. Led the frontend and built the canvas synchronization engine.",
+//     stack: ["Next.js", "Socket.io", "Redis"],
+//     github: "https://github.com",
+//     demo: "#",
+//   },
+//   {
+//     name: "ShelfSense",
+//     period: "2023",
+//     image: "",
+//     description:
+//       "Inventory forecasting tool that predicts restock timing for small retailers from historical sales data. Owned the backend and data pipeline end to end.",
+//     stack: ["Python", "Django", "AWS"],
+//     github: "https://github.com",
+//     demo: "#",
+//   },
+// ];
 
 /* ---------- building blocks ---------- */
 function SectionLabel({ children }: { children: React.ReactNode }) {
