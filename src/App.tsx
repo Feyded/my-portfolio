@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, type ComponentType } from "react";
 import {
   FolderGit2 as Github,
   ExternalLink,
@@ -27,7 +27,7 @@ const T = {
 const PHOTO_URL = profile;
 
 /* ---------- tool logo icons (simplified brand marks) ---------- */
-const ICONS = {
+const ICONS: Record<string, ComponentType> = {
   React: () => (
     <svg viewBox="0 0 24 24" fill="none">
       <circle cx="12" cy="12" r="2.1" fill="#61DAFB" />
