@@ -601,46 +601,6 @@ function AvatarFrame({ src }: { src: string }) {
   );
 }
 
-function ProjectThumb({ src, name }: { src: string; name: string }) {
-  return (
-    <div
-      style={{
-        width: "100%",
-        aspectRatio: "16 / 9",
-        borderRadius: "8px",
-        overflow: "hidden",
-        border: `1px solid ${T.border}`,
-        background: T.bgPanelHover,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: "16px",
-      }}
-    >
-      {src ? (
-        <img
-          src={src}
-          alt={`${name} preview`}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
-      ) : (
-        <div style={{ textAlign: "center", color: T.textFaint }}>
-          <ImageIcon size={20} style={{ margin: "0 auto" }} />
-          <div
-            style={{
-              fontSize: "10.5px",
-              marginTop: "6px",
-              fontFamily: "'JetBrains Mono', monospace",
-            }}
-          >
-            Add screenshot
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function Portfolio() {
   const [year] = useState(new Date().getFullYear());
   const linkStyle = { color: T.textDim, textDecoration: "none" };
