@@ -4,9 +4,7 @@ import {
   ExternalLink,
   Mail,
   GraduationCap,
-  ArrowUpRight,
   User,
-  Image as ImageIcon,
 } from "lucide-react";
 import MatrixBackground from "./components/matrix-background";
 import profile from "@/assets/profile.jpg";
